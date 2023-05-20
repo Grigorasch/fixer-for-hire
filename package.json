@@ -1,14 +1,15 @@
 {
-  "name": "hard-worker",
+  "name": "worker",
   "version": "0.0.1",
   "description": "Small task manager. Allows you to create a queue of objects that need to be processed, and then, when you decide, start processing the backlog of cases.",
-  "main": "./src/hard-worker.js",
+  "main": "./src/worker.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "TaskManager"
+    "worker",
+    "task manager"
   ],
   "author": "Grigory",
   "license": "ISC",
