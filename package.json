@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Small task manager. Allows you to create a queue of objects that need to be processed, and then, when you decide, start processing the backlog of cases.",
   "main": "./src/hard-worker.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +12,7 @@
   ],
   "author": "Grigory",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "chai": "^4.3.7",
     "mocha": "^10.2.0"
   }
