@@ -1,15 +1,15 @@
 {
-  "name": "worker",
+  "name": "fixer-for-hire",
   "version": "0.1.2",
   "description": "Small task manager. Allows you to create a queue of objects that need to be processed, and then, when you decide, start processing the backlog of cases.",
-  "main": "./src/worker.js",
+  "main": "./src/fixer.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate-docs": "jsdoc -c jsdoc.json"
   },
   "keywords": [
-    "worker",
+    "fixer-for-hire",
     "task manager"
   ],
   "author": "Grigory",
