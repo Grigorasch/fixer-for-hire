@@ -4,7 +4,7 @@
  * @class Task
  * @typedef {Task}
  */
-export class Task {
+export default class Task {
     /**
      * Конструктор класса. Создаёт объект содержащий стрелочную функцию, которую нужно выполнить и приоритет задачи.
      *
