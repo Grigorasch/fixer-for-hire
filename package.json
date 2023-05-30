@@ -1,6 +1,6 @@
 {
   "name": "fixer-for-hire",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Small task manager. Allows you to create a queue of objects that need to be processed, and then, when you decide, start processing the backlog of cases.",
   "main": "./src/fixer.js",
   "type": "module",
