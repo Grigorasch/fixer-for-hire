@@ -102,7 +102,11 @@ export default class ChainLoop {
    * @param {ChainLoop} newPrevChain - ссылка на обновленный предыдущий узел.
    */
   setPrevChain(newPrevChain) {
-    this.prev = newPrevChain;
+    if (newPrevChain instanceof ChainLoop) {
+      this.prev = newPrevChain;
+    } else {
+      throw new SyntaxError('Узел переданный в качестве аргумента, должен принадлежать к типу ChainLoop')
+    }
   }
 
   /**
@@ -111,7 +115,11 @@ export default class ChainLoop {
    * @param {ChainLoop} newNextChain - ссылка на обновленный следующий узел.
    */
   setNextChain(newNextChain) {
-    this.next = newNextChain;
+    if (newNextChain instanceof ChainLoop) {
+      this.next = newNextChain;
+    } else {
+      throw new SyntaxError('Узел переданный в качестве аргумента, должен принадлежать к типу ChainLoop')
+    }
   }
 
   /**
