@@ -2,7 +2,6 @@ import { assert } from "chai";
 import { describe } from "mocha";
 import Task from "../../src/task-list/task.js";
 
-
 describe('Класс Task для хранения задач', function () {
     describe('Статичные методы', function () {
         describe('Функция приведения приоритета к стандартным значениям getPriority',
