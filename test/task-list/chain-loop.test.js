@@ -71,4 +71,40 @@ describe('Класс ChainLoop для организации связанног�
             assert.equal(startLoop.end.prev, testLoop);
         });
     });
+
+    describe('Метод setPrevChain', function () {
+        it('Вызов метода с правильным аргументом', function () {
+            const startLoop = new ChainLoop();
+            const testLoop = new ChainLoop('addAfter', startLoop);
+            testLoop.setPrevChain(testLoop);
+            assert.equal(testLoop.prev, testLoop);
+        });
+        it('Вызов метода с неправильным аргументом', function () {
+            const startLoop = new ChainLoop();
+            const testLoop = new ChainLoop('addAfter', startLoop);
+            let badFn = function () { testLoop.setPrevChain('string') }
+            expect(badFn).to.throw(SyntaxError);
+        });
+    });
+    describe('Метод setNextChain', function () {
+        it('Вызов метода с правильным аргументом', function () {
+            const startLoop = new ChainLoop();
+            const testLoop = new ChainLoop('addAfter', startLoop);
+            testLoop.setNextChain(testLoop);
+            assert.equal(testLoop.next, testLoop);
+        });
+        it('Вызов метода с неправильным аргументом', function () {
+            const startLoop = new ChainLoop();
+            const testLoop = new ChainLoop('addAfter', startLoop);
+            let badFn = function () { testLoop.setNextChain('string') }
+            expect(badFn).to.throw(SyntaxError);
+        });
+    });
+    describe('Метод setContent', function () {
+        it('Вызов метода с аргументом', function () {
+            const startLoop = new ChainLoop();
+            startLoop.setContent({name: 'Gri', age: 30})
+            assert.deepEqual(startLoop.cur, {name: 'Gri', age: 30});
+        });
+    });
 });
