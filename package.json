@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-docs": "jsdoc -c jsdoc.json",
-    "docs": "jsdoc -c jsdocP.json"
+    "generate-docs": "jsdoc -c ./config/jsdoc.json",
+    "docs": "jsdoc -c ./config/jsdoc.json"
   },
   "keywords": [
     "fixer-for-hire",
